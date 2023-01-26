@@ -22,3 +22,9 @@ VALUES (00001,	'Petey Cruiser',	'Madrid'),
 (00006,	'Bob Frapples',	'Mexico City'),
 (00007,	'Walter Melon',	'Amsterdam'),
 (00008,	'Shonda Leer',	'São Paulo');
+
+INSERT INTO Invoices (Invoice_number, Date, Car, Customer, Salesperson) 
+VALUES (852399038,'2018-08-22', 1,2,4),
+(731166526,	'2018-12-31',	4,	1,	6),
+(271135104,	'2019-01-22',	3,	3,	8);
+

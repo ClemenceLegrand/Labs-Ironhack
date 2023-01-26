@@ -56,4 +56,23 @@ Date date NOT NULL,
 Car int NOT NULL,
 Customer int NOT NULL,
 Salesperson int NOT NULL);
+ALTER TABLE Cars
+ADD CONSTRAINT cars_pk
+PRIMARY KEY (ID);
+ALTER TABLE Customers
+ADD CONSTRAINT customer_pk
+PRIMARY KEY (ID);
+ALTER TABLE Salespersons 
+ADD CONSTRAINT salespersons_pk
+PRIMARY KEY (ID);
+ALTER TABLE Invoices
+ADD CONSTRAINT invoices_keys
+PRIMARY KEY (ID);
+ALTER TABLE Invoices
+ADD FOREIGN KEY (Car) REFERENCES Cars(ID);
+ALTER TABLE Invoices
+ADD FOREIGN KEY (Customer) REFERENCES Customers(ID);
+ALTER TABLE Invoices
+ADD FOREIGN KEY (Salesperson) REFERENCES Salespersons(ID);
+
 
